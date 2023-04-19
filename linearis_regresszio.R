@@ -1,5 +1,10 @@
 linearis_regresszio = function(x, y)
 {
+	if(length(x) != length(y))
+	{
+		return('Azonos hosszúnak kell lennie az x-nek és y-nak báttya!');
+	}
+
 	# x átlag
 	mean_x = 0;
 	n = length(x); #= length(y)
